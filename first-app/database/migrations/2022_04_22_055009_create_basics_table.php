@@ -17,8 +17,13 @@ class CreateBasicsTable extends Migration
             $table->id();
             $table ->string('name');
             $table ->string('email');
+            // $table -> 
+            
             $table->timestamps();
         });
+
+       
+        
     }
 
     /**

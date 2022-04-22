@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompanyCRUDController;
+use App\Http\Controllers\basiccontroller;
  
 
 
@@ -16,6 +17,7 @@ use App\Http\Controllers\CompanyCRUDController;
 |
 */
 Route::resource('companies', CompanyCRUDController::class);
+Route::resource('basic', basiccontroller::class);
 Route::get('/', function () {
     return view('welcome');
 });
